@@ -12,7 +12,7 @@ class Genre < ActiveRecord::Base
 
   def all_artist_names
     artist_array = []
-    artist_array << self.artists
-    artist_array
+    self.artists
+
   end
 end
